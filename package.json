@@ -1,0 +1,50 @@
+{
+	"name": "voqal-integration",
+	"displayName": "Voqal Integration",
+	"description": "Natural speech voice control for the builders of tomorrow",
+	"icon": "images/pluginIcon.png",
+	"version": "2024.13.0",
+	"publisher": "voqaldev",
+	"repository": "https://github.com/voqal/vscode-integration",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Voqal Integration Settings",
+			"properties": {
+				"voqal.websocketUrl": {
+					"type": "string",
+					"default": "ws://localhost:22171/integration/vscode",
+					"description": "The WebSocket URL for Voqal Assistant integration."
+				}
+			}
+		}
+	},
+	"activationEvents": ["*"],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint",
+		"watch": "tsc -watch -p ./",
+		"package": "vsce package --allow-star-activation"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@stylistic/eslint-plugin": "^2.9.0",
+		"@types/node": "^20",
+		"@types/vscode": "^1.73.0",
+		"@types/ws": "^8.5.13",
+		"eslint": "^9.13.0",
+		"typescript": "^5.6.2",
+		"typescript-eslint": "^8.11.0"
+	},
+	"dependencies": {
+		"ws": "^8.16.0"
+	}
+}

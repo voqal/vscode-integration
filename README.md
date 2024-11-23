@@ -1,0 +1,2 @@
+This integration adds VS Code support to the Voqal Assistant. Giving you the ability to natively interact with
+VS Code with your voice. This integration is currently in alpha and only supports a limited set of commands.
