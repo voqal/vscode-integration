@@ -25,7 +25,7 @@ jobs:
           npm run vscode:prepublish
 
       - name: Package extension
-        run: npx vsce package --no-dependencies
+        run: npx vsce package
 
       - name: Publish extension
-        run: npx vsce publish --no-dependencies --pat ${{ secrets.VSCE_PUBLISH_KEY }}
+        run: npx vsce publish --pat ${{ secrets.VSCE_PUBLISH_KEY }}
