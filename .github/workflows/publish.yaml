@@ -28,6 +28,4 @@ jobs:
         run: npx vsce package --no-dependencies
 
       - name: Publish extension
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PUBLISH_TOKEN }}
-        run: npx vsce publish --no-dependencies
+        run: npx vsce publish --no-dependencies --pat ${{ secrets.VSCE_PUBLISH_KEY }}
