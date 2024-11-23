@@ -1,5 +1,5 @@
 group = "dev.voqal"
-version = "2024.13.0"
+version = "1.0.0"
 
 repositories {
     mavenCentral()

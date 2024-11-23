@@ -3,7 +3,7 @@
 	"displayName": "Voqal Integration",
 	"description": "Natural speech voice control for the builders of tomorrow",
 	"icon": "images/pluginIcon.png",
-	"version": "2024.13.0",
+	"version": "1.0.0",
 	"publisher": "voqaldev",
 	"repository": "https://github.com/voqal/vscode-integration",
 	"engines": {
