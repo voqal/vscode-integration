@@ -16,7 +16,7 @@ setInterval(async () => {
 }, 500);
 
 // noinspection JSUnusedGlobalSymbols
-export function activate(context: vscode.ExtensionContext) {
+export function activate() {
     console.log('Voqal VS Code integration activated');
     initializeWebSocket();
 }
