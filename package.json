@@ -1,9 +1,9 @@
 {
 	"name": "voqal-integration",
-	"displayName": "Voqal Integration",
+	"displayName": "Voqal",
 	"description": "Natural speech voice control for the builders of tomorrow",
 	"icon": "images/pluginIcon.png",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "voqaldev",
 	"repository": "https://github.com/voqal/vscode-integration",
 	"engines": {
@@ -20,7 +20,7 @@
 				"voqal.websocketUrl": {
 					"type": "string",
 					"default": "ws://localhost:22171/integration/vscode",
-					"description": "The WebSocket URL for Voqal Assistant integration."
+					"description": "The WebSocket URL for Voqal integration."
 				}
 			}
 		}
